@@ -4,6 +4,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  // 600
@@ -45,7 +46,7 @@
             bindings = <
 &kp ESC           &kp N1        &kp N2        &kp N3          &kp N4     &kp N5     &kp UP_ARROW     &kp N6         &kp N7              &kp N8     &kp N9            &kp N0             &kp EQUAL
 &kp TAB           &kp Q         &kp W         &kp E           &kp R      &kp T      &kp DOWN_ARROW   &kp Y          &kp U               &kp I      &kp O             &kp P              &kp BSLH
-&mo 1             &kp A         &kp S         &kp D           &kp F      &kp G      &kp LEFT_ARROW   &kp H          &mt LEFT_CONTROL J  &kp K      &kp L             &kp SEMI           &kp RETURN
+&mo 1             &kp A         &kp S         &kp D           &kp F      &kp G      &kp LEFT_ARROW   &kp H          &mt LEFT_CONTROL J  &lt 1 K    &kp L             &kp SEMI           &kp RETURN
 &kp LEFT_CONTROL  &kp Z         &kp X         &kp C           &kp V      &kp B      &kp RIGHT_ARROW  &kp N          &kp M               &kp COMMA  &kp DOT           &kp FSLH           &kp GRAVE
 &kp C_MUTE        &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp SPACE  &kp SQT    &kp ENTER        &kp BACKSLASH  &kp BACKSPACE       &kp SPACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
             >;
@@ -58,7 +59,7 @@
             bindings = <
 &kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &trans
 &trans      &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP      &kp HOME   &kp MINUS         &kp EQUAL
-&trans      &kp TILDE        &trans          &trans           &trans           &mkp MB5           &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&trans      &kp TILDE        &trans          &kp COMMA        &kp PERIOD       &mkp MB5           &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
 &trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &kp F11    &kp F12           &trans
 &kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans      &trans     &trans
             >;
