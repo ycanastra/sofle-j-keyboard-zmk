@@ -13,6 +13,19 @@
 
 // Source unicode-chars for desired languages
 #include "zmk-helpers/unicode-chars/german.dtsi"
+#include "zmk-helpers/key-labels/36.h"                                      // Source key-labels.
+
+
+
+#define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  // 600
+#define U_MS_U &mmv MOVE_UP
+#define U_MS_D &mmv MOVE_DOWN
+#define U_MS_L &mmv MOVE_LEFT
+#define U_MS_R &mmv MOVE_RIGHT
+#define ZMK_MOUSE_DEFAULT_SCRL_VAL 20    // 10
+#define KEYS_L LT0 LT1 LT2 LT3 LT4 LM0 LM1 LM2 LM3 LM4 LB0 LB1 LB2 LB3 LB4  // Left-hand keys.
+#define KEYS_R RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2 RB3 RB4  // Right-hand keys.
+#define THUMBS LH2 LH1 LH0 RH0 RH1 RH2        
 
 ZMK_HOLD_TAP(hml,
     flavor = "balanced";
@@ -33,15 +46,6 @@ ZMK_HOLD_TAP(hmr,
     hold-trigger-key-positions = <KEYS_L THUMBS>;
     hold-trigger-on-release;
 )
-
-#define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  // 600
-#define U_MS_U &mmv MOVE_UP
-#define U_MS_D &mmv MOVE_DOWN
-#define U_MS_L &mmv MOVE_LEFT
-#define U_MS_R &mmv MOVE_RIGHT
-#define ZMK_MOUSE_DEFAULT_SCRL_VAL 20    // 10
-
-
 
 / {
     behaviors {
