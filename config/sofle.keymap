@@ -14,13 +14,6 @@
 // Source unicode-chars for desired languages
 #include "zmk-helpers/unicode-chars/german.dtsi"
 
-#define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  // 600
-#define U_MS_U &mmv MOVE_UP
-#define U_MS_D &mmv MOVE_DOWN
-#define U_MS_L &mmv MOVE_LEFT
-#define U_MS_R &mmv MOVE_RIGHT
-#define ZMK_MOUSE_DEFAULT_SCRL_VAL 20    // 10
-
 ZMK_HOLD_TAP(hml,
     flavor = "balanced";
     tapping-term-ms = <280>;
@@ -40,6 +33,15 @@ ZMK_HOLD_TAP(hmr,
     hold-trigger-key-positions = <KEYS_L THUMBS>;
     hold-trigger-on-release;
 )
+
+#define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  // 600
+#define U_MS_U &mmv MOVE_UP
+#define U_MS_D &mmv MOVE_DOWN
+#define U_MS_L &mmv MOVE_LEFT
+#define U_MS_R &mmv MOVE_RIGHT
+#define ZMK_MOUSE_DEFAULT_SCRL_VAL 20    // 10
+
+
 
 / {
     behaviors {
